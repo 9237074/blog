@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>常见的自动化构建工具 | Cream 在努力💪</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/logo.png">
+    <meta name="description" content="让输出倒逼输入">
+    
+    <link rel="preload" href="/assets/css/0.styles.101e93c3.css" as="style"><link rel="preload" href="/assets/js/app.f06c6323.js" as="script"><link rel="preload" href="/assets/js/2.fbd03bc2.js" as="script"><link rel="preload" href="/assets/js/17.d473070f.js" as="script"><link rel="prefetch" href="/assets/js/10.0a734087.js"><link rel="prefetch" href="/assets/js/11.1dbe46cd.js"><link rel="prefetch" href="/assets/js/12.bb1ac121.js"><link rel="prefetch" href="/assets/js/13.a3b32353.js"><link rel="prefetch" href="/assets/js/14.d4ff927b.js"><link rel="prefetch" href="/assets/js/15.099a632c.js"><link rel="prefetch" href="/assets/js/16.512e2945.js"><link rel="prefetch" href="/assets/js/18.435a66cd.js"><link rel="prefetch" href="/assets/js/3.d3e1f837.js"><link rel="prefetch" href="/assets/js/4.77dc32b7.js"><link rel="prefetch" href="/assets/js/5.34cfd82a.js"><link rel="prefetch" href="/assets/js/6.cc18be44.js"><link rel="prefetch" href="/assets/js/7.5b60423a.js"><link rel="prefetch" href="/assets/js/8.a1d16cf6.js"><link rel="prefetch" href="/assets/js/9.97a4fc2f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.101e93c3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Cream 在努力💪</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/FrontEnd/" class="nav-link">
+  前端
+</a></div><div class="nav-item"><a href="/ComputerBasics/" class="nav-link">
+  计算机基础
+</a></div><div class="nav-item"><a href="/Notes/webpack/" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据结构与算法" class="dropdown-title"><span class="title">数据结构与算法</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据结构与算法" class="mobile-dropdown-title"><span class="title">数据结构与算法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Algorithm/sort/" class="nav-link">
+  排序
+</a></li></ul></div></div><div class="nav-item"><a href="/English/" class="nav-link">
+  英语四级
+</a></div><div class="nav-item"><a href="/Blog/" class="nav-link">
+  杂文
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/FrontEnd/" class="nav-link">
+  前端
+</a></div><div class="nav-item"><a href="/ComputerBasics/" class="nav-link">
+  计算机基础
+</a></div><div class="nav-item"><a href="/Notes/webpack/" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据结构与算法" class="dropdown-title"><span class="title">数据结构与算法</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据结构与算法" class="mobile-dropdown-title"><span class="title">数据结构与算法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Algorithm/sort/" class="nav-link">
+  排序
+</a></li></ul></div></div><div class="nav-item"><a href="/English/" class="nav-link">
+  英语四级
+</a></div><div class="nav-item"><a href="/Blog/" class="nav-link">
+  杂文
+</a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="常见的自动化构建工具"><a href="#常见的自动化构建工具" class="header-anchor">#</a> 常见的自动化构建工具</h3> <ul><li>Grunt 基于磁盘</li> <li>Gulp 基于内存 多任务</li> <li>FIS</li></ul> <h4 id="grunt"><a href="#grunt" class="header-anchor">#</a> Grunt</h4> <h4 id="gulp"><a href="#gulp" class="header-anchor">#</a> Gulp</h4> <div class="language- extra-class"><pre><code>npm install gulp 
+vim gulpfile.js
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code>exports<span class="token punctuation">.</span><span class="token function-variable function">foo</span> <span class="token operator">=</span> <span class="token parameter">done</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'foo task working~'</span><span class="token punctuation">)</span>
+    <span class="token function">done</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+exports<span class="token punctuation">.</span><span class="token function-variable function">default</span> <span class="token operator">=</span> <span class="token parameter">done</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'default task working~'</span><span class="token punctuation">)</span>
+    <span class="token function">done</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> gulp <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp'</span><span class="token punctuation">)</span>
+
+gulp<span class="token punctuation">.</span><span class="token function">task</span><span class="token punctuation">(</span><span class="token string">'bar'</span><span class="token punctuation">,</span> <span class="token parameter">done</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'bar working'</span><span class="token punctuation">)</span>
+    <span class="token function">done</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.f06c6323.js" defer></script><script src="/assets/js/2.fbd03bc2.js" defer></script><script src="/assets/js/17.d473070f.js" defer></script>
+  </body>
+</html>
