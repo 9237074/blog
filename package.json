@@ -2,12 +2,13 @@
   "name": "blog",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/9237074/blog.git",
+  "repository": "https://gitee.com/creamm/blog.git",
   "author": "9237074 <9237074@qq.com>",
   "license": "MIT",
   "scripts": {
     "start": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "build": "vuepress build docs",
+    "deploy": "bash deploy.sh"
   },
   "devDependencies": {
     "vuepress": "^1.7.1"

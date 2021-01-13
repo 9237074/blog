@@ -12,5 +12,5 @@ features:
   details: 
 - title: 数据结构与算法
   details: 
-footer: Copyright © 2020 Cream
+footer: Copyright © 2021 Cream
 ---

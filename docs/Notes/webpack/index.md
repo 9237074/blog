@@ -1,9 +1,11 @@
-
+---
+sidebar: auto
+---
 
 # webpack
     webpack webpack-cli
 
-### webpack配置文件
+## webpack配置文件
     webpack.config.js
 ```js
 const path = require('path')
@@ -15,12 +17,12 @@ module.exports = {
     }
 }
 ```
-#### webpack 工作模式
+### webpack 工作模式
 1. watch
-2. 
+2. production
 3. none 
 
-#### 模块打包
+### 模块打包
     css-loader style-loader
 ```js
 module.exports = {
@@ -35,7 +37,7 @@ module.exports = {
     }
 }
 ```
-#### 文件资源加载器
+### 文件资源加载器
     file-loader
 ```js
 module.exports = {
@@ -52,7 +54,7 @@ module.exports = {
     }
 }
 ```
-#### 代码检查类
+### 代码检查类
     babel-loader
 ```js
 module.exports = {
@@ -72,23 +74,23 @@ module.exports = {
     }
 }
 ```
-#### 常用加载器分类
+### 常用加载器分类
 1. 编译转换类 css-loader style-loader
 2. 文件操作类 file-loader
 3. 代码检查类 babel-loader
-### webpack 模块加载方式
+## webpack 模块加载方式
 + 遵循ESM标准的import声明
 + 遵循CommonJS标准的require函数
 + 遵循AMD标准的define函数和require函数
 + *样式代码中的@import指令和url函数
 + *HTML代码中图片标签的src属性
-### Loader的工作原理
+## Loader的工作原理
 ```js
 module.exports = source => {
     return 'console.log("js代码")'
 }
 ```
-### webpack常见插件
+## webpack常见插件
 + clean-webpack-plugin
 + html-webpack-plugin
 + copy-webpack-plugin
@@ -118,7 +120,7 @@ module.exports = {
     ]
 }
 ```
-### 开发一个webpack插件
+## 开发一个webpack插件
 + 钩子 Hooks 一个函数或者一个包含apply方法的对象
 + 通过在生命周期中的钩子中挂在函数实现拓展
 ```js
@@ -141,12 +143,12 @@ class MyPlugin {
 }
 ```
 
-### 增强webpack开发体验
+## 增强webpack开发体验
 + 自动编译 watch工作模式
     webpack --watch
 + 自动刷新浏览器 
     BrowserSync
-### webpack devServer
+## webpack devServer
     webpack-dev-server --open
 ```js
 module.exports = {
@@ -167,7 +169,7 @@ module.exports = {
     }
 }
 ```
-### Source Map
+## Source Map
 + 文件后缀 .map
 + 构建后代码最后一行注释 //# sourceMappingURL=jquery-3.4.1.min.map
 ```js
@@ -175,10 +177,10 @@ module.exports = {
     devtool: 'source-map'
 }
 ```
-### devtool
+## devtool
 + 开发环境下 cheap-module-eval-source-map
 + 生产环境 none ｜ nosources-source-map
-### HMR 热替换
+## HMR 热替换
     webpack-dev-server --hot
 ```js
 const webpack = require('webpack)
@@ -197,7 +199,7 @@ module.hot.accept('./editor', () => {
     console.log('editor 更新了')
 })
 ```
-### 不同环境不同配置
+## 不同环境不同配置
 1.  配置文件根据环境不同导出不同配置
     ```js
     module.exports = (env, argv) => {
@@ -222,14 +224,14 @@ module.hot.accept('./editor', () => {
         ]
     })
     ```
-### DefinePlugin
+## DefinePlugin
 + 为代码注入全局成员 process.env.NODE_ENV
 ```js
 new webpack.DefinePlugin({
     API_BASE_URL: JSON.stringify('https://api.example.com') // js代码片段
 })
 ```
-### Tree-shaking 未引用代码（dead code）
+## Tree-shaking 未引用代码（dead code）
 + 必须是ES Module
 ```js
 module.exports = {
@@ -243,9 +245,9 @@ module.exports = {
     }
 }
 ```
-### Tree-shaking & Babel
+## Tree-shaking & Babel
 + Babel可能把ES Module -> CommonJS 导致不生效
-### sideEffects 副作用
+## sideEffects 副作用
 + 一般用于npm包标记是否有副作用
 ```js
 module.exports = {
@@ -256,9 +258,9 @@ module.exports = {
 // package.json
 sideEffects:[]
 ```
-### webpack 分割代码 Code Splitting 
+## webpack 分割代码 Code Splitting 
 + 分包，按需加载
-### webpack 多入口打包
+## webpack 多入口打包
 ```js
 module.exports = {
     enrty: {
@@ -270,7 +272,7 @@ module.exports = {
     }
 }
 ```
-### 提前公共模块
+## 提前公共模块
 ```js
 module.exports = {
     optimization: {
@@ -280,25 +282,25 @@ module.exports = {
     }
 }
 ```
-### 动态导入
+## 动态导入
 ```js
 import().then(res => {
 
 })
 ```
-### 魔法注释
+## 魔法注释
 ```js
 /* webpackChunkName: 'pots' */
 ```
-### MiniCssExtractPlugin 提取CSS到单个文件 css文件超过150KB使用
+## MiniCssExtractPlugin 提取CSS到单个文件 css文件超过150KB使用
 ```js
 new MiniCssExtractPlugin()
 ```
-### OptimizeCssAssetsWebpackPlugin 压缩输出的CSS文件
+## OptimizeCssAssetsWebpackPlugin 压缩输出的CSS文件
 ```js
 new OptimizeCssAssetsWebpackPlugin()
 ```
-### 输出文件名Hash
+## 输出文件名Hash
 ```js
 {
  filename: '[name]-[hash:8].bundle.js',
