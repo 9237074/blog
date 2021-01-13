@@ -1,0 +1,69 @@
+function selectSort(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        let minIndex = i;
+        for (let j = i; j < arr.length; j++) {
+            if (arr[j] < arr[minIndex]) {
+                minIndex = j;
+            }
+        }
+        [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]]
+    }
+    return arr
+}
+
+function insertionSort(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        let t = arr[i];
+        let j;
+        for (j = i; j > 0 && arr[j - 1] > 0; j--) {
+            if (arr[j] < arr[j - 1]) {
+                [arr[j], arr[j - 1]] = [arr[j - 1], arr[j]]
+            } else {
+                break
+            }
+        }
+    }
+    return arr
+}
+
+
+function merge(left, right) {
+    let temp = [];
+    while (left.length && right.length) {
+        if (left[0] < right[0]) {
+            temp.push(left.shift());
+        } else {
+            temp.push(right.shift());
+        }
+    }
+    console.log(temp.concat(left, right))
+    //left和right长度不一样时，直接连接剩下的长的部分（本身有序）
+    return temp.concat(left, right);
+}
+function mergeSort(arr) {
+    if (arr.length <= 1) return arr;
+    let mid = Math.floor(arr.length / 2)
+    let left = arr.slice(0, mid);
+    let right = arr.slice(mid, arr.length)
+    return merge(mergeSort(left), mergeSort(right));
+}
+
+function quickSort(arr) {
+    if (arr.length <= 1) { return arr; } var pivotIndex = Math.floor(arr.length / 2); //基准位置（理论上可任意选取） 
+    var pivot = arr.splice(pivotIndex, 1)[0]; //基准数 
+    var left = [];
+    var right = [];
+    for (var i = 0; i < arr.length; i++) { 
+        if (arr[i] < pivot) { 
+            left.push(arr[i]); 
+        } else { 
+            right.push(arr[i]); 
+        } 
+    } return quickSort(left).concat([pivot], quickSort(right)); //链接左数组、基准数构成的数组、右数组 };
+}
+let arr = [3, 2, 5, 4, 1, 6]
+
+// console.log(selectSort(arr))
+// console.log(insertionSort(arr))
+console.log(quickSort(arr))
+
