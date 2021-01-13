@@ -4,6 +4,7 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', href: '/logo.png' }]
   ],
+  base: '/blog/',
   themeConfig: {
     nav: [
       { text: '前端', link: '/FrontEnd/' },
