@@ -8,6 +8,7 @@ module.exports = {
     nav: [
       { text: '前端', link: '/FrontEnd/' },
       { text: '计算机基础', link: '/ComputerBasics/' },
+      { text: 'webpack', link: '/Notes/webpack' },
       { text: '数据结构与算法', 
         ariaLabel: '数据结构与算法',
         items: [{
