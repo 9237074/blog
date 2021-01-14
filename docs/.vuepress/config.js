@@ -7,7 +7,11 @@ module.exports = {
   base: '/blog/',
   themeConfig: {
     nav: [
-      { text: '前端', link: '/FrontEnd/' },
+      { text: '前端', ariaLabel: 'vue',
+        items: [{
+          text: 'vue', link: '/FrontEnd/vuejs/'
+        }]
+      },
       { text: '计算机基础', link: '/ComputerBasics/' },
       { text: 'webpack', link: '/Notes/webpack/' },
       { text: '数据结构与算法', 
@@ -15,7 +19,7 @@ module.exports = {
         items: [{
           text: '排序', link: '/Algorithm/sort/'
         }] },
-      { text: '英语四级', link: '/English/' },
+      { text: '英语', link: '/English/' },
       { text: '杂文', link: '/Blog/' }
     ],
     nextLinks: false,
