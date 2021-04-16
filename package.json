@@ -5,7 +5,7 @@
   "author": "9237074 <9237074@qq.com>",
   "license": "MIT",
   "scripts": {
-    "start": "vuepress dev . --host \"localhost\"",
+    "start": "vuepress dev .",
     "build": "vuepress build .",
     "deploy": "bash deploy.sh"
   },

@@ -4,7 +4,7 @@ home: true
 heroText: Cream 💪
 tagline: 让输出倒逼输入
 actionText: 快速上手 →
-actionLink: /zh/guide/
+actionLink: https://github.com/9237074/blog
 features:
 - title: 前端
   details: 
