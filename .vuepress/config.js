@@ -4,9 +4,9 @@ module.exports = {
   title: 'Cream 在努力💪',
   description: '让输出倒逼输入',
   head: [
-    ['link', { rel: 'icon', href: '/logo.png' }]
+    ['link', { rel: 'icon', href: src_dir + '/logo.png' }]
   ],
-  base: '/',
+  base: '/blog/',
   themeConfig: {
     sidebar,
     nav: [
