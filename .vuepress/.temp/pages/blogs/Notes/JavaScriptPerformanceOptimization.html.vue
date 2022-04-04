@@ -1,0 +1,183 @@
+<template><h3 id="内存管理" tabindex="-1"><a class="header-anchor" href="#内存管理" aria-hidden="true">#</a> 内存管理</h3>
+<ul>
+<li>内存：由可读写单元组成，表示一片可操作空间</li>
+<li>管理：人为的去操作一片空间的申请、使用和释放</li>
+<li>内存管理：开发者主动申请空间、使用空间、释放空间</li>
+<li>管理流程：申请-使用-释放</li>
+</ul>
+<h3 id="javascript中的内存管理" tabindex="-1"><a class="header-anchor" href="#javascript中的内存管理" aria-hidden="true">#</a> JavaScript中的内存管理</h3>
+<ul>
+<li>申请内存空间</li>
+<li>使用内存空间</li>
+<li>释放内存空间</li>
+</ul>
+<h3 id="javascript中的垃圾" tabindex="-1"><a class="header-anchor" href="#javascript中的垃圾" aria-hidden="true">#</a> JavaScript中的垃圾</h3>
+<ul>
+<li>JavaScript中内存管理是自动的</li>
+<li>对象不再被引用时是垃圾</li>
+<li>对象不能从根上访问到时是垃圾</li>
+</ul>
+<h3 id="javascript中的可达对象" tabindex="-1"><a class="header-anchor" href="#javascript中的可达对象" aria-hidden="true">#</a> JavaScript中的可达对象</h3>
+<ul>
+<li>可以访问到的对象就是可达对象（引用、作用域）</li>
+<li>可达的标准就是从根出发是否能够被找到</li>
+<li>JavaScript中的根就可以理解为是全局变量对象</li>
+</ul>
+<h3 id="gc算法是什么" tabindex="-1"><a class="header-anchor" href="#gc算法是什么" aria-hidden="true">#</a> GC算法是什么</h3>
+<ul>
+<li>GC是一种机制，垃圾回收器完成具体的工作</li>
+<li>工作的内容就是查找垃圾释放空间、回收空间</li>
+<li>算法就是工作时查找和回收所遵循的规则</li>
+</ul>
+<h3 id="常见gc算法" tabindex="-1"><a class="header-anchor" href="#常见gc算法" aria-hidden="true">#</a> 常见GC算法</h3>
+<ul>
+<li>引用计数</li>
+<li>标记清除</li>
+<li>标记整理</li>
+<li>分代回收</li>
+</ul>
+<h4 id="引用计数算法实现原理" tabindex="-1"><a class="header-anchor" href="#引用计数算法实现原理" aria-hidden="true">#</a> 引用计数算法实现原理</h4>
+<ul>
+<li>核心思想：设置引用数，判断当前引用数是否为0</li>
+<li>引用计数器</li>
+<li>引用关系改变是修改引用数字</li>
+<li>引用数字为0时立即回收</li>
+</ul>
+<div class="language-javascript ext-js line-numbers-mode"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> user1 <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">11</span><span class="token punctuation">}</span>
+<span class="token keyword">const</span> user2 <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">22</span><span class="token punctuation">}</span>
+<span class="token keyword">const</span> user3 <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">33</span><span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> nameList <span class="token operator">=</span> <span class="token punctuation">[</span>user1<span class="token punctuation">.</span>age<span class="token punctuation">,</span> user2<span class="token punctuation">.</span>age<span class="token punctuation">,</span> user3<span class="token punctuation">.</span>age<span class="token punctuation">,</span> <span class="token punctuation">]</span>
+
+<span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// 全局作用域</span>
+    <span class="token comment">// num1 = 1</span>
+    <span class="token comment">// num2 = 2</span>
+
+    <span class="token comment">// 局部作用域</span>
+    <span class="token keyword">const</span> num1 <span class="token operator">=</span> <span class="token number">1</span>
+    <span class="token keyword">const</span> num2 <span class="token operator">=</span> <span class="token number">2</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h5 id="优点" tabindex="-1"><a class="header-anchor" href="#优点" aria-hidden="true">#</a> 优点</h5>
+<ul>
+<li>发现垃圾立即回收</li>
+<li>最大限度减少程序暂停</li>
+</ul>
+<h5 id="缺点" tabindex="-1"><a class="header-anchor" href="#缺点" aria-hidden="true">#</a> 缺点</h5>
+<ul>
+<li>无法回收循环引用的对象</li>
+<li>资源消耗大</li>
+</ul>
+<h4 id="标记清除算法实现原理" tabindex="-1"><a class="header-anchor" href="#标记清除算法实现原理" aria-hidden="true">#</a> 标记清除算法实现原理</h4>
+<ul>
+<li>核心思想：分标记和清除二个阶段完成</li>
+<li>遍历所有对象找标记活动对象</li>
+<li>遍历所有对象清除没有标记对象</li>
+<li>回收相应的空间</li>
+</ul>
+<h5 id="优点-1" tabindex="-1"><a class="header-anchor" href="#优点-1" aria-hidden="true">#</a> 优点</h5>
+<ul>
+<li>解决循环引用不能回收问题</li>
+</ul>
+<h5 id="缺点-1" tabindex="-1"><a class="header-anchor" href="#缺点-1" aria-hidden="true">#</a> 缺点</h5>
+<ul>
+<li>空间碎片化</li>
+</ul>
+<h4 id="标记整理算法实现原理" tabindex="-1"><a class="header-anchor" href="#标记整理算法实现原理" aria-hidden="true">#</a> 标记整理算法实现原理</h4>
+<ul>
+<li>标记整理可以看作是标记清除的增强</li>
+<li>标记阶段的操作和标记清除一致</li>
+<li>清除阶段会先执行整理，移动对象位置</li>
+</ul>
+<h5 id="优点-2" tabindex="-1"><a class="header-anchor" href="#优点-2" aria-hidden="true">#</a> 优点</h5>
+<ul>
+<li>减少碎片化空间</li>
+</ul>
+<h5 id="缺点-2" tabindex="-1"><a class="header-anchor" href="#缺点-2" aria-hidden="true">#</a> 缺点</h5>
+<ul>
+<li>不会立即回收垃圾对象</li>
+</ul>
+<h4 id="认识v8" tabindex="-1"><a class="header-anchor" href="#认识v8" aria-hidden="true">#</a> 认识V8</h4>
+<ul>
+<li>V8是一款主流的JavaScript执行引擎</li>
+<li>V8采用即时编译</li>
+<li>V8内存设限</li>
+</ul>
+<h4 id="v8垃圾回收策略" tabindex="-1"><a class="header-anchor" href="#v8垃圾回收策略" aria-hidden="true">#</a> V8垃圾回收策略</h4>
+<ul>
+<li>采用分代回收的思想</li>
+<li>内存分为新生代、老生代</li>
+</ul>
+<h5 id="v8中常用gc算法" tabindex="-1"><a class="header-anchor" href="#v8中常用gc算法" aria-hidden="true">#</a> V8中常用GC算法</h5>
+<ul>
+<li>分代回收</li>
+<li>空间复制</li>
+<li>标记清除</li>
+<li>标记整理</li>
+<li>标记增量</li>
+</ul>
+<h4 id="v8内存分配" tabindex="-1"><a class="header-anchor" href="#v8内存分配" aria-hidden="true">#</a> V8内存分配</h4>
+<ul>
+<li>V8内存空间一分为二</li>
+<li>小空间用于存储新生代对象（32M｜16M）</li>
+<li>新生代指的是存活时间较短的对象</li>
+</ul>
+<h5 id="新生代对象回收实现" tabindex="-1"><a class="header-anchor" href="#新生代对象回收实现" aria-hidden="true">#</a> 新生代对象回收实现</h5>
+<ul>
+<li>回收过程采用复制算法 + 标记整理</li>
+<li>新生代内存区分为二个等大小空间</li>
+<li>使用空间为From，空闲空间为To</li>
+<li>活动对象存储与From空间</li>
+<li>标记整理后将活动对象拷贝至To</li>
+<li>From与To交换空间完成释放</li>
+</ul>
+<h6 id="回收细节说明" tabindex="-1"><a class="header-anchor" href="#回收细节说明" aria-hidden="true">#</a> 回收细节说明</h6>
+<ul>
+<li>拷贝过程中可能出现晋升</li>
+<li>晋升就是将新生代对象移动至老生代</li>
+<li>一轮GC还存活的新生代需要晋升</li>
+<li>To空间的使用率超过25%</li>
+</ul>
+<h5 id="老年代对象说明" tabindex="-1"><a class="header-anchor" href="#老年代对象说明" aria-hidden="true">#</a> 老年代对象说明</h5>
+<ul>
+<li>老年代对象存放在右侧老生代区域</li>
+<li>64位操作系统1.4G，32位擦操作系统700M</li>
+<li>老年代对象就是指存活时间较长的对象</li>
+</ul>
+<h5 id="老年代对象回收实现" tabindex="-1"><a class="header-anchor" href="#老年代对象回收实现" aria-hidden="true">#</a> 老年代对象回收实现</h5>
+<ul>
+<li>主要采用标记清除、标记整理、增量标记算法</li>
+<li>首先使用标记清除完成垃圾空间的回收</li>
+<li>采用标记整理进行空间优化</li>
+<li>采用增量标记进行效率优化</li>
+</ul>
+<h5 id="细节对比" tabindex="-1"><a class="header-anchor" href="#细节对比" aria-hidden="true">#</a> 细节对比</h5>
+<ul>
+<li>新生代区域垃圾回收使用空间换时间</li>
+<li>老生代区域垃圾回收不适合复制算法</li>
+</ul>
+<h3 id="使用performance" tabindex="-1"><a class="header-anchor" href="#使用performance" aria-hidden="true">#</a> 使用Performance</h3>
+<ul>
+<li>GC的目的是为了实现内存空间的良性循环</li>
+<li>良性循环的基石是合理使用</li>
+<li>时刻关注才能确定是否合理</li>
+<li>Performance时刻监控内存</li>
+</ul>
+<h4 id="performance-使用步骤" tabindex="-1"><a class="header-anchor" href="#performance-使用步骤" aria-hidden="true">#</a> Performance 使用步骤</h4>
+<ul>
+<li>打开浏览器输入目标地址</li>
+<li>进入开发人员工具面板，选择Performance</li>
+<li>开启录制功能，访问具体界面</li>
+<li>执行界面中记录的内存信息</li>
+</ul>
+<h4 id="内存问题的外在表现" tabindex="-1"><a class="header-anchor" href="#内存问题的外在表现" aria-hidden="true">#</a> 内存问题的外在表现</h4>
+<ul>
+<li>页面出现延迟加载或经常性暂停</li>
+<li>页面持续性出现糟糕的性能</li>
+<li>页面的性能随时间延长越来越差</li>
+</ul>
+<h4 id="监控内存的几种方式" tabindex="-1"><a class="header-anchor" href="#监控内存的几种方式" aria-hidden="true">#</a> 监控内存的几种方式</h4>
+</template>

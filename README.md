@@ -1,16 +1,18 @@
 ---
 home: true
-# heroImage: /hero.png
+heroImage: /favicon.ico
 heroText: Cream 💪
 tagline: 让输出倒逼输入
-actionText: 快速上手 →
-actionLink: https://github.com/9237074/blog
-features:
-- title: 前端
-  details: 
-- title: 计算机基础
-  details: 
-- title: 数据结构与算法
-  details: 
-footer: Copyright © 2021 Cream
+actions:
+- text: 前端
+  link: /blogs/FrontEnd/html/001
+  type: secondary
+- text: 计算机基础
+  link: /blogs/ComputerBasics/DataStructure/001
+  type: secondary
+- text: 数据结构与算法
+  link: /blogs/Engineering/git/001
+  type: secondary
+footer:  Copyright © 2022 Cream
+footerHtml: true
 ---

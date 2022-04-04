@@ -24,3 +24,5 @@ sidebar: auto
 
 ## 第三个
 asd
+
+<my-demo></my-demo>
