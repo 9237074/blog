@@ -19,8 +19,8 @@ export const pagesComponents = {
   "v-1652a7bc": defineAsyncComponent(() => import(/* webpackChunkName: "v-1652a7bc" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/ComputerBasics/Algorethm/001.html.vue")),
   // path: /blogs/ComputerBasics/DataStructure/001.html
   "v-0ed8d686": defineAsyncComponent(() => import(/* webpackChunkName: "v-0ed8d686" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/ComputerBasics/DataStructure/001.html.vue")),
-  // path: /blogs/ComputerBasics/Webprotocal/001.html
-  "v-a9401f56": defineAsyncComponent(() => import(/* webpackChunkName: "v-a9401f56" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/ComputerBasics/Webprotocal/001.html.vue")),
+  // path: /blogs/ComputerBasics/webprotocal/001.html
+  "v-c0ca8796": defineAsyncComponent(() => import(/* webpackChunkName: "v-c0ca8796" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/ComputerBasics/webprotocal/001.html.vue")),
   // path: /blogs/Engineering/AutomatedConstruction/001.html
   "v-1a80472e": defineAsyncComponent(() => import(/* webpackChunkName: "v-1a80472e" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/Engineering/AutomatedConstruction/001.html.vue")),
   // path: /blogs/Engineering/git/001.html

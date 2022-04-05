@@ -3,6 +3,7 @@ home: true
 heroImage: /favicon.ico
 heroText: Cream 💪
 tagline: 让输出倒逼输入
+layout: false
 actions:
 - text: 前端
   link: /blogs/FrontEnd/html/001

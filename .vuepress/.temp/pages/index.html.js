@@ -8,6 +8,7 @@ export const data = {
     "heroImage": "/favicon.ico",
     "heroText": "Cream 💪",
     "tagline": "让输出倒逼输入",
+    "layout": false,
     "actions": [
       {
         "text": "前端",
@@ -31,4 +32,17 @@ export const data = {
   "excerpt": "",
   "headers": [],
   "filePathRelative": "README.md"
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
 }

@@ -91,7 +91,9 @@ typings/
 # public
 
 # vuepress build output
-# .vuepress/dist
+.vuepress/dist
+.vuepress/.temp/
+.vuepress/.cache/
 
 # Serverless directories
 .serverless/
@@ -104,5 +106,3 @@ typings/
 
 # TernJS port file
 .tern-port
-
-.DS_Store

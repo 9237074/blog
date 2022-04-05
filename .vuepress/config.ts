@@ -4,7 +4,6 @@ import path from 'path';
 import sidebar from './siderbar';
 import navbar from './navbar';
 
-
 export default defineUserConfig<DefaultThemeOptions>({
   base: '/blog/',
   lang: 'zh',
@@ -19,7 +18,10 @@ export default defineUserConfig<DefaultThemeOptions>({
     sidebarDepth: 2,
     editLink: false,
     lastUpdated: false,
-    contributors: false,
+    contributors: false
+  },
+  alias: {
+    '@theme/Page.vue': path.resolve(__dirname, './components/CustomPage.vue'),
   },
   plugins: [[
     '@vuepress/register-components',
@@ -29,5 +31,6 @@ export default defineUserConfig<DefaultThemeOptions>({
         'CustomLayout': path.resolve(__dirname, './components/CustomLayout.vue'),
       },
     },
-  ],]
+  ]
+  ]
 })

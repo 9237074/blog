@@ -17,8 +17,8 @@ export const pagesData = {
   "v-1652a7bc": () => import(/* webpackChunkName: "v-1652a7bc" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/ComputerBasics/Algorethm/001.html.js").then(({ data }) => data),
   // path: /blogs/ComputerBasics/DataStructure/001.html
   "v-0ed8d686": () => import(/* webpackChunkName: "v-0ed8d686" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/ComputerBasics/DataStructure/001.html.js").then(({ data }) => data),
-  // path: /blogs/ComputerBasics/Webprotocal/001.html
-  "v-a9401f56": () => import(/* webpackChunkName: "v-a9401f56" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/ComputerBasics/Webprotocal/001.html.js").then(({ data }) => data),
+  // path: /blogs/ComputerBasics/webprotocal/001.html
+  "v-c0ca8796": () => import(/* webpackChunkName: "v-c0ca8796" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/ComputerBasics/webprotocal/001.html.js").then(({ data }) => data),
   // path: /blogs/Engineering/AutomatedConstruction/001.html
   "v-1a80472e": () => import(/* webpackChunkName: "v-1a80472e" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/Engineering/AutomatedConstruction/001.html.js").then(({ data }) => data),
   // path: /blogs/Engineering/git/001.html
