@@ -5,7 +5,7 @@ import sidebar from './siderbar';
 import navbar from './navbar';
 
 export default defineUserConfig<DefaultThemeOptions>({
-  base: '/blog/',
+  // base: '/blog/',
   lang: 'zh',
   title: 'Cream 在努力💪',
   description: '让输出倒逼输入',
