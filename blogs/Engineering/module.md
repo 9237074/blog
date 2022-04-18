@@ -1,19 +1,18 @@
 # 模块化
-
-#### 模块化规范
-##### CommonJS 同步模块加载模块
+## 标准与规范
+### CommonJS 同步模块加载模块
 + 一个文件就是一个模块
 + 每个模块都有单独的作用域
 + 通过module.exports导出成员
 + 通过require函数载入模块
 
-##### AMD 异步
+#### AMD 异步
 + AMD使用起来相对复杂
 + 模块JS文件请求频繁
 
-##### ES Modules VS CommonJS
+#### ES Modules VS CommonJS
 
-##### ES Modules
+#### ES Modules
 + 基本特性
     - 通过给 script 添加 type = module 的属性
     1. ESM 自动采用严格模式，忽略‘use strict’
@@ -34,3 +33,11 @@
         2. CommonJS中不能导入ESM
         3. CommonJS始终只会导出一个默认成员
         4. 注意import不是解构导出对象
+### WebPack配置
+### 插件机制
+### 打包过程和结果分析
+### ES Module标准
+### 资源模块的加载
+### WebPack高级特性
+### WebPack实现原理
+### Rollup、Parcel

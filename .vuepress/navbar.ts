@@ -4,17 +4,15 @@ const navbar = [
   {
     text: '前端', ariaLabel: 'FrontEnd',
     children: [{
-      text: 'Html', link: src_dir + '/FrontEnd/html/001'
+      text: 'HTML', link: src_dir + '/FrontEnd/html/001'
     }, {
-      text: 'Css', link: src_dir + '/FrontEnd/css/001'
+      text: 'CSS', link: src_dir + '/FrontEnd/css/001'
     }, {
-      text: 'Javascript', link: src_dir + '/FrontEnd/javascript/001'
+      text: 'JavaScript', link: src_dir + '/FrontEnd/javascript/001'
     }, {
       text: 'Vue', link: src_dir + '/FrontEnd/vue/001'
     }, {
       text: 'React', link: src_dir + '/FrontEnd/react/001'
-    },{
-      text: '函数式编程', link: src_dir + '/FrontEnd/functional/001'
     }]
   },
   {
@@ -28,19 +26,23 @@ const navbar = [
     }]
   },
   {
-    text: '工程化', ariaLabel: 'Engineering',
+    text: 'Node.js', link: src_dir + '/Nodejs/Advanced'
+  },
+  {
+    text: "核心框架原理",
     children: [{
-      text: 'Git', link: src_dir + '/Engineering/git/001'
+      text: 'Vue',
+      link: src_dir + '/FrontEnd/CoreFramework/Vue/Principle'
     }, {
-      text: '模块化', link: src_dir + '/Engineering/module/001'
-    }, {
-      text: 'Webpack', link: src_dir + '/Engineering/webpack/001'
-    }, {
-      text: '自动化构建', link: src_dir + '/Engineering/AutomatedConstruction/001'
+      text: 'React',
+      link: src_dir + '/FrontEnd/CoreFramework/React/Advanced'
     }]
   },
-  { text: '英语', link: src_dir + '/English/' },
-  { text: '杂文', link: src_dir + '/Blog/' }
+  {
+    text: '工程化', link: src_dir + '/Engineering/module',
+  },
+  // { text: '英语', link: src_dir + '/English/' },
+  // { text: '杂文', link: src_dir + '/Blog/' }
 ]
 
 export default navbar

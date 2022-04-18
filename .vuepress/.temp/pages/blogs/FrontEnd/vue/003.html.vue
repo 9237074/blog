@@ -1,11 +1,11 @@
-<template><h1 id="数据驱动1" tabindex="-1"><a class="header-anchor" href="#数据驱动1" aria-hidden="true">#</a> 数据驱动1</h1>
+<template><h1 id="数据驱动" tabindex="-1"><a class="header-anchor" href="#数据驱动" aria-hidden="true">#</a> 数据驱动</h1>
 <h2 id="准备工作" tabindex="-1"><a class="header-anchor" href="#准备工作" aria-hidden="true">#</a> 准备工作</h2>
 <ul>
 <li>数据驱动</li>
 <li>响应式的核心原理</li>
 <li>发布订阅模式和观察者模式</li>
 </ul>
-<h2 id="数据驱动" tabindex="-1"><a class="header-anchor" href="#数据驱动" aria-hidden="true">#</a> 数据驱动</h2>
+<h2 id="数据驱动-1" tabindex="-1"><a class="header-anchor" href="#数据驱动-1" aria-hidden="true">#</a> 数据驱动</h2>
 <ul>
 <li>数据响应式、双向绑定、数据驱动</li>
 <li>数据响应式

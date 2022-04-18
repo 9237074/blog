@@ -1,20 +1,23 @@
-<template><h1 id="javascript" tabindex="-1"><a class="header-anchor" href="#javascript" aria-hidden="true">#</a> javascript</h1>
-<h3 id="new-的过程" tabindex="-1"><a class="header-anchor" href="#new-的过程" aria-hidden="true">#</a> new 的过程</h3>
-<pre><code>1.新生成了一个对象
-2.链接到原型
-3.绑定this
-4.返回新对象
-</code></pre>
-<div class="language-javascript ext-js line-numbers-mode"><pre v-pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-	<span class="token comment">// 创建一个空的对象</span>
-	<span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Object</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-	<span class="token comment">// 获得构造函数</span>
-	<span class="token keyword">let</span> Con <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">shift</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>arguments<span class="token punctuation">)</span>
-	<span class="token comment">// 链接到原型</span>
-	obj<span class="token punctuation">.</span>__proto__ <span class="token operator">=</span> <span class="token class-name">Con</span><span class="token punctuation">.</span>prototype
-	<span class="token comment">// 绑定 this，执行构造函数</span>
-	<span class="token keyword">let</span> result <span class="token operator">=</span> <span class="token function">Con</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span> arguments<span class="token punctuation">)</span>
-	<span class="token comment">// 确保 new 出来的是个对象</span>
-	<span class="token keyword">return</span> <span class="token keyword">typeof</span> result <span class="token operator">===</span> <span class="token string">'object'</span> <span class="token operator">?</span> result <span class="token operator">:</span> obj
-<span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div></template>
+<template><h1 id="学习资料" tabindex="-1"><a class="header-anchor" href="#学习资料" aria-hidden="true">#</a> 学习资料</h1>
+<div class="custom-container tip"><p class="custom-container-title">JavaScript介绍</p>
+<p>JavaScript 是一门编程语言，可为网站添加交互功能（例如：游戏、动态样式、动画以及在按下按钮或收到表单数据时做出的响应等）。本文介绍了 JavaScript 的精彩之处和主要用途。
+<a href="https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/JavaScript_basics#javascript_%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F" target="_blank" rel="noopener noreferrer">来源<ExternalLinkIcon/></a></p>
+</div>
+<h1 id="编者引言" tabindex="-1"><a class="header-anchor" href="#编者引言" aria-hidden="true">#</a> 编者引言</h1>
+<p>关于 JavaScript 相关教程过多，这里不在赘述。编者认为比较好的三个学习网站。</p>
+<h2 id="mdn" tabindex="-1"><a class="header-anchor" href="#mdn" aria-hidden="true">#</a> MDN</h2>
+<div class="custom-container tip"><p class="custom-container-title">MDN</p>
+<p>JavaScript 是一门编程语言，可为网站添加交互功能（例如：游戏、动态样式、动画以及在按下按钮或收到表单数据时做出的响应等）。本文介绍了 JavaScript 的精彩之处和主要用途。</p>
+</div>
+<p><a href="">MDN JavaScript 中文文档</a></p>
+<h2 id="现代javascript教程" tabindex="-1"><a class="header-anchor" href="#现代javascript教程" aria-hidden="true">#</a> 现代JavaScript教程</h2>
+<div class="custom-container tip"><p class="custom-container-title">现代JavaScript教程 介绍</p>
+<p>以最新的 JavaScript 标准为基准。通过简单但足够详细的内容，为你讲解从基础到高阶的 JavaScript 相关知识。</p>
+</div>
+<p><a href="https://zh.javascript.info/" target="_blank" rel="noopener noreferrer">现代JavaScript 中文文档<ExternalLinkIcon/></a></p>
+<h2 id="ecma-262" tabindex="-1"><a class="header-anchor" href="#ecma-262" aria-hidden="true">#</a> ECMA-262</h2>
+<div class="custom-container tip"><p class="custom-container-title">ECMA-262 介绍</p>
+<p>ECMAScript® 语言规范</p>
+</div>
+<p><a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/" target="_blank" rel="noopener noreferrer">ECMA-262 英文文档<ExternalLinkIcon/></a></p>
+</template>

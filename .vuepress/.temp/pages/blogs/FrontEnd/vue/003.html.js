@@ -1,7 +1,7 @@
 export const data = {
   "key": "v-4cc870b5",
   "path": "/blogs/FrontEnd/vue/003.html",
-  "title": "数据驱动1",
+  "title": "数据驱动",
   "lang": "zh",
   "frontmatter": {},
   "excerpt": "",
@@ -15,7 +15,7 @@ export const data = {
     {
       "level": 2,
       "title": "数据驱动",
-      "slug": "数据驱动",
+      "slug": "数据驱动-1",
       "children": []
     },
     {
@@ -44,4 +44,17 @@ export const data = {
     }
   ],
   "filePathRelative": "blogs/FrontEnd/vue/003.md"
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
 }

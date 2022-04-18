@@ -5,15 +5,15 @@ export const themeData = {
       "ariaLabel": "FrontEnd",
       "children": [
         {
-          "text": "Html",
+          "text": "HTML",
           "link": "/blogs/FrontEnd/html/001"
         },
         {
-          "text": "Css",
+          "text": "CSS",
           "link": "/blogs/FrontEnd/css/001"
         },
         {
-          "text": "Javascript",
+          "text": "JavaScript",
           "link": "/blogs/FrontEnd/javascript/001"
         },
         {
@@ -23,10 +23,6 @@ export const themeData = {
         {
           "text": "React",
           "link": "/blogs/FrontEnd/react/001"
-        },
-        {
-          "text": "函数式编程",
-          "link": "/blogs/FrontEnd/functional/001"
         }
       ]
     },
@@ -49,34 +45,25 @@ export const themeData = {
       ]
     },
     {
-      "text": "工程化",
-      "ariaLabel": "Engineering",
+      "text": "Node.js",
+      "link": "/blogs/Nodejs/Advanced"
+    },
+    {
+      "text": "核心框架原理",
       "children": [
         {
-          "text": "Git",
-          "link": "/blogs/Engineering/git/001"
+          "text": "Vue",
+          "link": "/blogs/FrontEnd/CoreFramework/Vue/Principle"
         },
         {
-          "text": "模块化",
-          "link": "/blogs/Engineering/module/001"
-        },
-        {
-          "text": "Webpack",
-          "link": "/blogs/Engineering/webpack/001"
-        },
-        {
-          "text": "自动化构建",
-          "link": "/blogs/Engineering/AutomatedConstruction/001"
+          "text": "React",
+          "link": "/blogs/FrontEnd/CoreFramework/React/Advanced"
         }
       ]
     },
     {
-      "text": "英语",
-      "link": "/blogs/English/"
-    },
-    {
-      "text": "杂文",
-      "link": "/blogs/Blog/"
+      "text": "工程化",
+      "link": "/blogs/Engineering/module"
     }
   ],
   "repo": "9237074/blog",
@@ -94,14 +81,21 @@ export const themeData = {
         "text": "CSS",
         "collapsible": true,
         "children": [
-          "/blogs/FrontEnd/css/001"
+          "/blogs/FrontEnd/css/001",
+          "/blogs/FrontEnd/css/002"
         ]
       },
       {
         "text": "JavaScript",
         "collapsible": true,
         "children": [
-          "/blogs/FrontEnd/javascript/001"
+          "/blogs/FrontEnd/javascript/001",
+          "/blogs/FrontEnd/javascript/002",
+          "/blogs/FrontEnd/javascript/Typescript",
+          "/blogs/FrontEnd/javascript/async",
+          "/blogs/FrontEnd/javascript/es",
+          "/blogs/FrontEnd/javascript/functional",
+          "/blogs/FrontEnd/javascript/preformance"
         ]
       },
       {
@@ -119,13 +113,6 @@ export const themeData = {
         "collapsible": true,
         "children": [
           "/blogs/FrontEnd/react/001"
-        ]
-      },
-      {
-        "text": "函数式编程",
-        "collapsible": true,
-        "children": [
-          "/blogs/FrontEnd/functional/001"
         ]
       }
     ],
@@ -152,33 +139,43 @@ export const themeData = {
         ]
       }
     ],
+    "/blogs/FrontEnd/CoreFramework": [
+      {
+        "text": "Vue",
+        "collapsible": true,
+        "children": [
+          "/blogs/FrontEnd/CoreFramework/Vue/Advanced",
+          "/blogs/FrontEnd/CoreFramework/Vue/Principle"
+        ]
+      },
+      {
+        "text": "React",
+        "collapsible": true,
+        "children": [
+          "/blogs/FrontEnd/CoreFramework/React/Advanced",
+          "/blogs/FrontEnd/CoreFramework/React/DesignPrinciple"
+        ]
+      }
+    ],
     "/blogs/Engineering": [
       {
-        "text": "Git",
-        "collapsible": true,
+        "text": "前端工程化",
+        "collapsible": false,
         "children": [
-          "/blogs/Engineering/git/001"
+          "/blogs/Engineering/AutomatedConstruction",
+          "/blogs/Engineering/cli",
+          "/blogs/Engineering/module",
+          "/blogs/Engineering/standard",
+          "/blogs/Engineering/webpack"
         ]
-      },
+      }
+    ],
+    "/blogs/Nodejs": [
       {
-        "text": "模块化",
-        "collapsible": true,
+        "text": "NodeJS高级编程",
+        "collapsible": false,
         "children": [
-          "/blogs/Engineering/module/001"
-        ]
-      },
-      {
-        "text": "webpack",
-        "collapsible": true,
-        "children": [
-          "/blogs/Engineering/webpack/001"
-        ]
-      },
-      {
-        "text": "自动化构建",
-        "collapsible": true,
-        "children": [
-          "/blogs/Engineering/AutomatedConstruction/001"
+          "/blogs/Nodejs/advanced"
         ]
       }
     ]
@@ -209,4 +206,17 @@ export const themeData = {
   "openInNewWindow": "open in new window",
   "toggleDarkMode": "toggle dark mode",
   "toggleSidebar": "toggle sidebar"
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updateThemeData) {
+    __VUE_HMR_RUNTIME__.updateThemeData(themeData)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ themeData }) => {
+    __VUE_HMR_RUNTIME__.updateThemeData(themeData)
+  })
 }
