@@ -64,6 +64,10 @@ export const themeData = {
     {
       "text": "工程化",
       "link": "/blogs/Engineering/module"
+    },
+    {
+      "text": "常用解决方案",
+      "link": "/blogs/Solution/FCP"
     }
   ],
   "repo": "9237074/blog",
@@ -176,6 +180,18 @@ export const themeData = {
         "collapsible": false,
         "children": [
           "/blogs/Nodejs/advanced"
+        ]
+      }
+    ],
+    "/blogs/Solution": [
+      {
+        "text": "首屏性能提升方案",
+        "collapsible": false,
+        "children": [
+          "/blogs/Solution/API",
+          "/blogs/Solution/FCP",
+          "/blogs/Solution/LongList",
+          "/blogs/Solution/Middleware"
         ]
       }
     ]

@@ -41,6 +41,9 @@ const navbar = [
   {
     text: '工程化', link: src_dir + '/Engineering/module',
   },
+  {
+    text: '常用解决方案', link: src_dir + '/Solution/FCP',
+  }
   // { text: '英语', link: src_dir + '/English/' },
   // { text: '杂文', link: src_dir + '/Blog/' }
 ]

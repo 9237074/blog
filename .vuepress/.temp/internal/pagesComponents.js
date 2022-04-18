@@ -3,10 +3,6 @@ import { defineAsyncComponent } from 'vue'
 export const pagesComponents = {
   // path: /
   "v-8daa1a0e": defineAsyncComponent(() => import(/* webpackChunkName: "v-8daa1a0e" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/index.html.vue")),
-  // path: /blogs/
-  "v-76fdf177": defineAsyncComponent(() => import(/* webpackChunkName: "v-76fdf177" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/index.html.vue")),
-  // path: /blogs/Blog/
-  "v-6df63596": defineAsyncComponent(() => import(/* webpackChunkName: "v-6df63596" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/Blog/index.html.vue")),
   // path: /blogs/ComputerBasics/
   "v-69a34cb8": defineAsyncComponent(() => import(/* webpackChunkName: "v-69a34cb8" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/ComputerBasics/index.html.vue")),
   // path: /blogs/Engineering/AutomatedConstruction.html
@@ -27,6 +23,14 @@ export const pagesComponents = {
   "v-64445fae": defineAsyncComponent(() => import(/* webpackChunkName: "v-64445fae" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/Notes/JavaScriptPerformanceOptimization.html.vue")),
   // path: /blogs/Notes/
   "v-657731e5": defineAsyncComponent(() => import(/* webpackChunkName: "v-657731e5" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/Notes/index.html.vue")),
+  // path: /blogs/Solution/API.html
+  "v-1afeb384": defineAsyncComponent(() => import(/* webpackChunkName: "v-1afeb384" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/Solution/API.html.vue")),
+  // path: /blogs/Solution/FCP.html
+  "v-562770a5": defineAsyncComponent(() => import(/* webpackChunkName: "v-562770a5" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/Solution/FCP.html.vue")),
+  // path: /blogs/Solution/LongList.html
+  "v-02ec3c00": defineAsyncComponent(() => import(/* webpackChunkName: "v-02ec3c00" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/Solution/LongList.html.vue")),
+  // path: /blogs/Solution/Middleware.html
+  "v-0a3b6268": defineAsyncComponent(() => import(/* webpackChunkName: "v-0a3b6268" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/Solution/Middleware.html.vue")),
   // path: /blogs/ComputerBasics/Algorethm/001.html
   "v-1652a7bc": defineAsyncComponent(() => import(/* webpackChunkName: "v-1652a7bc" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/ComputerBasics/Algorethm/001.html.vue")),
   // path: /blogs/ComputerBasics/DataStructure/001.html
@@ -41,10 +45,6 @@ export const pagesComponents = {
   "v-29c1c78e": defineAsyncComponent(() => import(/* webpackChunkName: "v-29c1c78e" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/FrontEnd/css/002.html.vue")),
   // path: /blogs/FrontEnd/functional/001.html
   "v-4c67094e": defineAsyncComponent(() => import(/* webpackChunkName: "v-4c67094e" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/FrontEnd/functional/001.html.vue")),
-  // path: /blogs/FrontEnd/html/001.html
-  "v-360027b4": defineAsyncComponent(() => import(/* webpackChunkName: "v-360027b4" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/FrontEnd/html/001.html.vue")),
-  // path: /blogs/FrontEnd/html/002.html
-  "v-32967676": defineAsyncComponent(() => import(/* webpackChunkName: "v-32967676" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/FrontEnd/html/002.html.vue")),
   // path: /blogs/FrontEnd/javascript/001.html
   "v-458ad124": defineAsyncComponent(() => import(/* webpackChunkName: "v-458ad124" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/FrontEnd/javascript/001.html.vue")),
   // path: /blogs/FrontEnd/javascript/002.html
@@ -59,6 +59,10 @@ export const pagesComponents = {
   "v-38aebd5a": defineAsyncComponent(() => import(/* webpackChunkName: "v-38aebd5a" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/FrontEnd/javascript/functional.html.vue")),
   // path: /blogs/FrontEnd/javascript/preformance.html
   "v-36f22282": defineAsyncComponent(() => import(/* webpackChunkName: "v-36f22282" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/FrontEnd/javascript/preformance.html.vue")),
+  // path: /blogs/FrontEnd/html/001.html
+  "v-360027b4": defineAsyncComponent(() => import(/* webpackChunkName: "v-360027b4" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/FrontEnd/html/001.html.vue")),
+  // path: /blogs/FrontEnd/html/002.html
+  "v-32967676": defineAsyncComponent(() => import(/* webpackChunkName: "v-32967676" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/FrontEnd/html/002.html.vue")),
   // path: /blogs/FrontEnd/react/001.html
   "v-0c24be1e": defineAsyncComponent(() => import(/* webpackChunkName: "v-0c24be1e" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/FrontEnd/react/001.html.vue")),
   // path: /blogs/FrontEnd/vue/001.html

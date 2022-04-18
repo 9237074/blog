@@ -4,7 +4,7 @@ const ComputerBasics = '/blogs/ComputerBasics'
 const Engineering = '/blogs/Engineering'
 const CoreFramework = '/blogs/FrontEnd/CoreFramework'
 const Nodejs = '/blogs/Nodejs'
-
+const Solution = '/blogs/Solution'
 
 const html = createSideBarConfig('HTML', `${FRONTEND_PATH}/html`)
 const css = createSideBarConfig('CSS', `${FRONTEND_PATH}/css`)
@@ -29,6 +29,11 @@ const React = createSideBarConfig('React', `${CoreFramework}/React`)
 
 const NodeAdvanced = createSideBarConfig('NodeJS高级编程', `${Nodejs}`, false)
 
+const FCP = createSideBarConfig('首屏性能提升方案', `${Solution}`, false)
+// const API = createSideBarConfig('API接口鉴权方案', `${Solution}/API`)
+// const middleware = createSideBarConfig('中间层方案', `${Solution}/middleware`)
+// const LongList = createSideBarConfig('长列表无限滚动方案', `${Solution}/LongList`)
+
 const sliderbar = {
   [FRONTEND_PATH]: [
     html,
@@ -51,6 +56,9 @@ const sliderbar = {
   ],
   [Nodejs]: [
     NodeAdvanced
+  ],
+  [Solution]: [
+    FCP
   ]
 }
 

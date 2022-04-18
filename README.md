@@ -11,8 +11,8 @@ actions:
 - text: 计算机基础
   link: /blogs/ComputerBasics/DataStructure/001
   type: secondary
-- text: 数据结构与算法
-  link: /blogs/Engineering/git/001
+- text: 常见解决方案
+  link: /blogs/Solution/FCP
   type: secondary
 footer:  Copyright © 2022 Cream
 footerHtml: true

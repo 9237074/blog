@@ -1,10 +1,6 @@
 export const pagesData = {
   // path: /
   "v-8daa1a0e": () => import(/* webpackChunkName: "v-8daa1a0e" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/index.html.js").then(({ data }) => data),
-  // path: /blogs/
-  "v-76fdf177": () => import(/* webpackChunkName: "v-76fdf177" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/index.html.js").then(({ data }) => data),
-  // path: /blogs/Blog/
-  "v-6df63596": () => import(/* webpackChunkName: "v-6df63596" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/Blog/index.html.js").then(({ data }) => data),
   // path: /blogs/ComputerBasics/
   "v-69a34cb8": () => import(/* webpackChunkName: "v-69a34cb8" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/ComputerBasics/index.html.js").then(({ data }) => data),
   // path: /blogs/Engineering/AutomatedConstruction.html
@@ -25,6 +21,14 @@ export const pagesData = {
   "v-64445fae": () => import(/* webpackChunkName: "v-64445fae" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/Notes/JavaScriptPerformanceOptimization.html.js").then(({ data }) => data),
   // path: /blogs/Notes/
   "v-657731e5": () => import(/* webpackChunkName: "v-657731e5" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/Notes/index.html.js").then(({ data }) => data),
+  // path: /blogs/Solution/API.html
+  "v-1afeb384": () => import(/* webpackChunkName: "v-1afeb384" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/Solution/API.html.js").then(({ data }) => data),
+  // path: /blogs/Solution/FCP.html
+  "v-562770a5": () => import(/* webpackChunkName: "v-562770a5" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/Solution/FCP.html.js").then(({ data }) => data),
+  // path: /blogs/Solution/LongList.html
+  "v-02ec3c00": () => import(/* webpackChunkName: "v-02ec3c00" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/Solution/LongList.html.js").then(({ data }) => data),
+  // path: /blogs/Solution/Middleware.html
+  "v-0a3b6268": () => import(/* webpackChunkName: "v-0a3b6268" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/Solution/Middleware.html.js").then(({ data }) => data),
   // path: /blogs/ComputerBasics/Algorethm/001.html
   "v-1652a7bc": () => import(/* webpackChunkName: "v-1652a7bc" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/ComputerBasics/Algorethm/001.html.js").then(({ data }) => data),
   // path: /blogs/ComputerBasics/DataStructure/001.html
@@ -39,10 +43,6 @@ export const pagesData = {
   "v-29c1c78e": () => import(/* webpackChunkName: "v-29c1c78e" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/FrontEnd/css/002.html.js").then(({ data }) => data),
   // path: /blogs/FrontEnd/functional/001.html
   "v-4c67094e": () => import(/* webpackChunkName: "v-4c67094e" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/FrontEnd/functional/001.html.js").then(({ data }) => data),
-  // path: /blogs/FrontEnd/html/001.html
-  "v-360027b4": () => import(/* webpackChunkName: "v-360027b4" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/FrontEnd/html/001.html.js").then(({ data }) => data),
-  // path: /blogs/FrontEnd/html/002.html
-  "v-32967676": () => import(/* webpackChunkName: "v-32967676" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/FrontEnd/html/002.html.js").then(({ data }) => data),
   // path: /blogs/FrontEnd/javascript/001.html
   "v-458ad124": () => import(/* webpackChunkName: "v-458ad124" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/FrontEnd/javascript/001.html.js").then(({ data }) => data),
   // path: /blogs/FrontEnd/javascript/002.html
@@ -57,6 +57,10 @@ export const pagesData = {
   "v-38aebd5a": () => import(/* webpackChunkName: "v-38aebd5a" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/FrontEnd/javascript/functional.html.js").then(({ data }) => data),
   // path: /blogs/FrontEnd/javascript/preformance.html
   "v-36f22282": () => import(/* webpackChunkName: "v-36f22282" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/FrontEnd/javascript/preformance.html.js").then(({ data }) => data),
+  // path: /blogs/FrontEnd/html/001.html
+  "v-360027b4": () => import(/* webpackChunkName: "v-360027b4" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/FrontEnd/html/001.html.js").then(({ data }) => data),
+  // path: /blogs/FrontEnd/html/002.html
+  "v-32967676": () => import(/* webpackChunkName: "v-32967676" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/FrontEnd/html/002.html.js").then(({ data }) => data),
   // path: /blogs/FrontEnd/react/001.html
   "v-0c24be1e": () => import(/* webpackChunkName: "v-0c24be1e" */"/Users/cream/Desktop/code/blog/.vuepress/.temp/pages/blogs/FrontEnd/react/001.html.js").then(({ data }) => data),
   // path: /blogs/FrontEnd/vue/001.html

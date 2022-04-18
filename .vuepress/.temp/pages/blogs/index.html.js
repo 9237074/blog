@@ -19,7 +19,7 @@ export const data = {
         "details": null
       },
       {
-        "title": "数据结构与算法",
+        "title": "常见解决方案",
         "details": null
       }
     ],
