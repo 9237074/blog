@@ -12,7 +12,7 @@ const javascript = createSideBarConfig('JavaScript', `${FRONTEND_PATH}/javascrip
 const vue = createSideBarConfig('Vue', `${FRONTEND_PATH}/vue`)
 const react = createSideBarConfig('React', `${FRONTEND_PATH}/react`)
 
-const dataStructure = createSideBarConfig('数据结构', `${ComputerBasics}/DataStructure`)
+const dataStructure  = createSideBarConfig('数据结构', `${ComputerBasics}/DataStructure`)
 const algorethm = createSideBarConfig('算法', `${ComputerBasics}/Algorethm`)
 const webprotocal = createSideBarConfig('网络协议', `${ComputerBasics}/Webprotocal`)
 

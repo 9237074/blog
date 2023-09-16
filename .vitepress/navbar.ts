@@ -1,9 +1,13 @@
+import type { NavItem } from '@vuepress/theme-default'
+import type {NavGroup} from "@vuepress/theme-default/lib/shared/nav";
+import {NavbarConfig} from "@vuepress/theme-default/lib/shared/nav";
+
 const src_dir = '/blogs'
 
-const navbar = [
+const nav = [
   {
-    text: '前端', ariaLabel: 'FrontEnd',
-    children: [{
+    text: '前端',
+    items: [{
       text: 'HTML', link: src_dir + '/FrontEnd/html/001'
     }, {
       text: 'CSS', link: src_dir + '/FrontEnd/css/001'
@@ -16,8 +20,8 @@ const navbar = [
     }]
   },
   {
-    text: '计算机基础', ariaLabel: '',
-    children: [{
+    text: '计算机基础',
+    items: [{
       text: '数据结构', link: src_dir + '/ComputerBasics/DataStructure/001'
     }, {
       text: '算法', link: src_dir + '/ComputerBasics/Algorethm/001'
@@ -30,7 +34,7 @@ const navbar = [
   },
   {
     text: "核心框架原理",
-    children: [{
+    items: [{
       text: 'Vue',
       link: src_dir + '/FrontEnd/CoreFramework/Vue/Principle'
     }, {
@@ -44,8 +48,6 @@ const navbar = [
   {
     text: '常用解决方案', link: src_dir + '/Solution/FCP',
   }
-  // { text: '英语', link: src_dir + '/English/' },
-  // { text: '杂文', link: src_dir + '/Blog/' }
 ]
 
-export default navbar
+export default nav
